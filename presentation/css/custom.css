@@ -1,0 +1,206 @@
+body{
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-width: 1209px !important;
+	width: 100%;
+}
+
+
+.cd-nav-trigger{
+	cursor: pointer;
+}
+
+.cd-slider-content{
+	min-width: 1209px !important;
+	}
+	
+.cd-slider-content .content-wrapper{
+	background-image: url(../img/noise.jpg);
+	background-position: fixed;
+}
+
+.fullscreen-header{
+	position: fixed;
+	height: 48px;
+    width: 48px;
+    right: calc(3vw - 24px);
+    top: calc(4vh - 24px);
+	background-color: #000;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	}
+
+.help-header{
+	position: fixed;
+	height: 48px;
+    width: 48px;
+    right: calc(6vw - 24px);
+    top: calc(4vh - 24px);
+	background-color: #000;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	}	
+
+
+.content-wrapper img{
+	max-width: 100%;
+	height: auto
+	
+}
+
+.fullscreen-header img, .help-header img{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.cd-slideshow-wrapper{
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.aligncenter{
+	display: block;
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+}
+
+.full{
+	display: inline-block;
+	width: 100%;
+}
+
+.half{
+	display: inline-block;
+	width: calc(50% - 50px);	
+}
+
+.thirty{
+	display: inline-block;
+	width: calc(30% - 50px);	
+}
+
+.seventy{
+	display: inline-block;
+	width: calc(70% - 50px);
+	
+}
+
+.middle-line{
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	background-color: #333;
+	vertical-align: middle;
+	margin: 0 40px 0 40px;
+}
+
+.content-wrapper{
+	max-height: calc(100vh - 160px) !important;
+	overflow-y:auto;
+}
+
+.content-wrapper p{
+	line-height: 1.5em;
+	margin: 0 0 1.25em 0;
+}
+
+.instructions{
+	margin: 40px auto 0 auto;
+	text-align: center;
+	display: block;
+	position: relative;
+	max-width: 550px;
+	width: calc(100% - 40px);
+	
+}
+
+.close-instruct{
+	display: block;
+	position: absolute;
+	right: 0px;
+	top:0px;
+	width: 24px;
+	height: auto;
+	opacity: 0.6;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.close-instruct:hover{
+	opacity: 1;
+}
+
+.instruction-title{
+	font-size: 32px;	
+}
+
+.instructions img{
+	max-width: 500px;
+}
+
+
+.instructions .arrows{
+	max-width: 300px;
+}
+
+.trans-img{
+	opacity: 0.3;
+}
+
+/* -- Rotate Correction-- */
+
+.rotate-correction{
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	z-index: 999;
+	top:0px;
+	left: 0px;
+	height: 100vh;
+	width: 100vw;
+	background-color: #000;
+	display: none;
+	opacity: 0;
+	transition:all 0.5s;
+}
+
+.rotate-correction img{
+	width: 400px;
+	height: auto;
+	opacity: 0.3;
+}
+
+
+/* Landscape */
+@media (max-width: 1209px){
+	.rotate-correction{
+		display: flex;
+		opacity: 1;
+	}
+}
+
+/*------------ Information Overlay ----------------*/
+
+.info-overlay{
+	top:0px;
+	left: 0px;
+	z-index: 999;
+	display: block;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+}
