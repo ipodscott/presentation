@@ -53,23 +53,170 @@
 										
 										<?php }else if ($selectLayout == "fifty_fifty"){ ?>
 										
-										   <div class="half" style="vertical-align: <?php the_sub_field('left_vertical_alignment'); ?>"><?php  the_sub_field('left_side');?></div>
+										   <div class="half" style="vertical-align: <?php the_sub_field('left_vertical_alignment'); ?>">
+										   
+										    
+											   <?php if(get_sub_field('left_side_content')): ?>
+												<?php while(has_sub_field('left_side_content')): ?>
+												
+												<?php $showCopy = get_sub_field('select_content'); if ($showCopy == "text"):?>
+													<?php the_sub_field("copy"); ?>
+							                   	<?php endif; ?>
+							                   	
+							                   	
+							                   	<?php $showVideo = get_sub_field('select_content'); if ($showVideo == "video"):?>
+							                   	
+							                   		<?php $vidUrl = get_sub_field('video');?>
+													<video  poster="<?php the_sub_field("video_poster"); ?>" controls src="<?php echo($vidUrl);?>"></video>
+													<div class="vid-cap"><?php the_sub_field("video_caption"); ?></div>
+							                   	<?php endif; ?>
+												
+												     
+												<?php endwhile; ?>
+												<?php endif; ?>
+										   
+										   </div>
+										   
+										   
+										   
 										   <div class="middle-line"></div>
-										   <div class="half" style="vertical-align: <?php the_sub_field('right_vertical_alignment'); ?>"><?php  the_sub_field('right_side');?></div>
+										   
+										   <div class="half" style="vertical-align: <?php the_sub_field('right_vertical_alignment'); ?>">
+										   
+										   
+										    
+											   <?php if(get_sub_field('right_side_content')): ?>
+												<?php while(has_sub_field('right_side_content')): ?>
+												
+												<?php $showCopy = get_sub_field('select_content'); if ($showCopy == "text"):?>
+													<?php the_sub_field("copy"); ?>
+							                   	<?php endif; ?>
+							                   	
+							                   	
+							                   	<?php $showVideo = get_sub_field('select_content'); if ($showVideo == "video"):?>
+							                   	
+							                   		<?php $vidUrl = get_sub_field('video');?>
+													<video poster="<?php the_sub_field("video_poster"); ?>" controls src="<?php echo($vidUrl);?>"></video>
+													<div class="vid-cap"><?php the_sub_field("video_caption"); ?></div>
+							                   	<?php endif; ?>
+												
+												     
+												<?php endwhile; ?>
+												<?php endif; ?>
+										   
+										   </div>
 										   
 										
 										<?php }else if ($selectLayout == "thirty _seventy"){ ?>
 										
-										   <div class="thirty" style="vertical-align: <?php the_sub_field('left_vertical_alignment'); ?>"><?php  the_sub_field('left_side');?></div>
+										   <div class="thirty" style="vertical-align: <?php the_sub_field('left_vertical_alignment'); ?>">
+											   
+											   
+											   
+											   <?php if(get_sub_field('left_side_content')): ?>
+												<?php while(has_sub_field('left_side_content')): ?>
+												
+												<?php $showCopy = get_sub_field('select_content'); if ($showCopy == "text"):?>
+													<?php the_sub_field("copy"); ?>
+							                   	<?php endif; ?>
+							                   	
+							                   	
+							                   	<?php $showVideo = get_sub_field('select_content'); if ($showVideo == "video"):?>
+							                   	
+							                   		<?php $vidUrl = get_sub_field('video');?>
+													<video poster="<?php the_sub_field("video_poster"); ?>" controls src="<?php echo($vidUrl);?>"></video>
+													<div class="vid-cap"><?php the_sub_field("video_caption"); ?></div>
+							                   	<?php endif; ?>
+												
+												     
+												<?php endwhile; ?>
+												<?php endif; ?>
+											   
+										</div>
 										   <div class="middle-line"></div>
-										   <div class="seventy" style="vertical-align: <?php the_sub_field('right_vertical_alignment'); ?>"><?php  the_sub_field('right_side');?></div>
+										   <div class="seventy" style="vertical-align: <?php the_sub_field('right_vertical_alignment'); ?>">
+										   
+										   
+										   <?php if(get_sub_field('right_side_content')): ?>
+												<?php while(has_sub_field('right_side_content')): ?>
+												
+												<?php $showCopy = get_sub_field('select_content'); if ($showCopy == "text"):?>
+													<?php the_sub_field("copy"); ?>
+							                   	<?php endif; ?>
+							                   	
+							                   	
+							                   	<?php $showVideo = get_sub_field('select_content'); if ($showVideo == "video"):?>
+							                   	
+							                   		<?php $vidUrl = get_sub_field('video');?>
+													<video  poster="<?php the_sub_field("video_poster"); ?>" controls src="<?php echo($vidUrl);?>"></video>
+													<div class="vid-cap"><?php the_sub_field("video_caption"); ?></div>
+							                   	<?php endif; ?>
+												
+												     
+												<?php endwhile; ?>
+												<?php endif; ?>
+										   
+										   
+										   
+										   
+										   </div>
 										   
 										   
 										   <?php }else if ($selectLayout == "seventy_thirty"){ ?>
 										
-										   <div class="seventy" style="vertical-align: <?php the_sub_field('left_vertical_alignment'); ?>"><?php  the_sub_field('left_side');?></div>
+										   <div class="seventy" style="vertical-align: <?php the_sub_field('left_vertical_alignment'); ?>">
+										   
+										   <?php if(get_sub_field('left_side_content')): ?>
+												<?php while(has_sub_field('left_side_content')): ?>
+												
+												<?php $showCopy = get_sub_field('select_content'); if ($showCopy == "text"):?>
+													<?php the_sub_field("copy"); ?>
+							                   	<?php endif; ?>
+							                   	
+							                   	
+							                   	<?php $showVideo = get_sub_field('select_content'); if ($showVideo == "video"):?>
+							                   	
+							                   		<?php $vidUrl = get_sub_field('video');?>
+													<video poster="<?php the_sub_field("video_poster"); ?>" controls src="<?php echo($vidUrl);?>"></video>
+													<div class="vid-cap"><?php the_sub_field("video_caption"); ?></div>
+							                   	<?php endif; ?>
+												
+												     
+												<?php endwhile; ?>
+												<?php endif; ?>
+
+										   
+										   
+										   
+										   </div>
+										   
+										   
 										   <div class="middle-line"></div>
-										   <div class="thirty" style="vertical-align: <?php the_sub_field('right_vertical_alignment'); ?>"><?php  the_sub_field('right_side');?></div>
+										   
+										   <div class="thirty" style="vertical-align: <?php the_sub_field('right_vertical_alignment'); ?>">
+										   
+										   
+										   <?php if(get_sub_field('right_side_content')): ?>
+												<?php while(has_sub_field('right_side_content')): ?>
+												
+												<?php $showCopy = get_sub_field('select_content'); if ($showCopy == "text"):?>
+													<?php the_sub_field("copy"); ?>
+							                   	<?php endif; ?>
+							                   	
+							                   	
+							                   	<?php $showVideo = get_sub_field('select_content'); if ($showVideo == "video"):?>
+							                   	
+							                   		<?php $vidUrl = get_sub_field('video');?>
+													<video poster="<?php the_sub_field("video_poster"); ?>" controls src="<?php echo($vidUrl);?>"></video>
+							                   	<?php endif; ?>
+												
+												     
+												<?php endwhile; ?>
+												<?php endif; ?>
+
+										   
+										   
+										   </div>
 										   
 										   
 
